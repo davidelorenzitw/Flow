@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF42F1BD22204E9100651A05 /* ModalViewControllerPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42F1B022204E9100651A05 /* ModalViewControllerPresenterTests.swift */; };
+		CF42F1BE22204E9100651A05 /* PopViewControllerDismisserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42F1B122204E9100651A05 /* PopViewControllerDismisserTests.swift */; };
+		CF42F1BF22204E9100651A05 /* PushViewControllerPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42F1B222204E9100651A05 /* PushViewControllerPresenterTests.swift */; };
+		CF42F1C022204E9100651A05 /* EmptyViewControllerDismisserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42F1B322204E9100651A05 /* EmptyViewControllerDismisserTests.swift */; };
+		CF42F1C122204E9100651A05 /* FakeScreenLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42F1B522204E9100651A05 /* FakeScreenLoader.swift */; };
+		CF42F1C222204E9100651A05 /* FakeViewControllerDismisser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42F1B622204E9100651A05 /* FakeViewControllerDismisser.swift */; };
+		CF42F1C322204E9100651A05 /* TestViewControllerModalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42F1B722204E9100651A05 /* TestViewControllerModalPresenter.swift */; };
+		CF42F1C422204E9100651A05 /* TestViewControllerPresenterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42F1B822204E9100651A05 /* TestViewControllerPresenterFactory.swift */; };
+		CF42F1C522204E9100651A05 /* TestViewControllerPushNavigationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42F1B922204E9100651A05 /* TestViewControllerPushNavigationPresenter.swift */; };
+		CF42F1C622204E9100651A05 /* ModalViewControllerDismisserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42F1BA22204E9100651A05 /* ModalViewControllerDismisserTests.swift */; };
+		CF42F1C722204E9100651A05 /* ViewControllerPresenterFactoryImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42F1BB22204E9100651A05 /* ViewControllerPresenterFactoryImplTests.swift */; };
+		CF42F1C822204E9100651A05 /* FlowHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42F1BC22204E9100651A05 /* FlowHandlerTests.swift */; };
+		CF42F1CC22204F8D00651A05 /* SimpleModalFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42F1CB22204F8D00651A05 /* SimpleModalFlowTests.swift */; };
+		CF42F1D22220692000651A05 /* MixedFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42F1D12220692000651A05 /* MixedFlowTests.swift */; };
+		CFAB18172223F5E2002BCB93 /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB18162223F5E2002BCB93 /* FlowController.swift */; };
+		CFBB87D4220DE46B00B5AC2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB87D3220DE46B00B5AC2B /* AppDelegate.swift */; };
+		CFBB87D9220DE46B00B5AC2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFBB87D7220DE46B00B5AC2B /* Main.storyboard */; };
+		CFBB87DB220DE46C00B5AC2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFBB87DA220DE46C00B5AC2B /* Assets.xcassets */; };
+		CFBB87DE220DE46C00B5AC2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFBB87DC220DE46C00B5AC2B /* LaunchScreen.storyboard */; };
+		CFBB87F1220DE4AD00B5AC2B /* ViewControllerPresenterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB87E7220DE4AD00B5AC2B /* ViewControllerPresenterFactory.swift */; };
+		CFBB87F2220DE4AD00B5AC2B /* ViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB87E8220DE4AD00B5AC2B /* ViewControllerPresenter.swift */; };
+		CFBB87F3220DE4AE00B5AC2B /* PushViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB87EA220DE4AD00B5AC2B /* PushViewControllerPresenter.swift */; };
+		CFBB87F4220DE4AE00B5AC2B /* PopViewControllerDismisser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB87EB220DE4AD00B5AC2B /* PopViewControllerDismisser.swift */; };
+		CFBB87F5220DE4AE00B5AC2B /* ModalViewControllerDismisser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB87ED220DE4AD00B5AC2B /* ModalViewControllerDismisser.swift */; };
+		CFBB87F6220DE4AE00B5AC2B /* ModalViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB87EE220DE4AD00B5AC2B /* ModalViewControllerPresenter.swift */; };
+		CFBB87F7220DE4AE00B5AC2B /* EmptyViewControllerDismisser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB87EF220DE4AD00B5AC2B /* EmptyViewControllerDismisser.swift */; };
+		CFBB87F8220DE4AE00B5AC2B /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB87F0220DE4AD00B5AC2B /* Flow.swift */; };
+		CFBB87FB220DE52600B5AC2B /* UINavigationController+Completion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB87FA220DE52600B5AC2B /* UINavigationController+Completion.swift */; };
+		CFCB3397221EBF5000E96BAB /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCB3396221EBF5000E96BAB /* RootViewController.swift */; };
+		CFCB3399221EC01900E96BAB /* UIViewController+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCB3398221EC01900E96BAB /* UIViewController+Layout.swift */; };
+		CFCB339B221EC83700E96BAB /* SimpleModalFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCB339A221EC83700E96BAB /* SimpleModalFlow.swift */; };
+		CFCB339F221EC97800E96BAB /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCB339E221EC97800E96BAB /* ButtonViewController.swift */; };
+		CFCB33A2221ECF4100E96BAB /* SimpleNavigationFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCB33A1221ECF4100E96BAB /* SimpleNavigationFlow.swift */; };
+		CFCB33A4221ED11700E96BAB /* ResponseGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCB33A3221ED11700E96BAB /* ResponseGeneratorViewController.swift */; };
+		CFCB33A6221ED1A800E96BAB /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCB33A5221ED1A800E96BAB /* SuccessViewController.swift */; };
+		CFCB33A8221ED1B200E96BAB /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCB33A7221ED1B200E96BAB /* ErrorViewController.swift */; };
+		CFCB33AB221EE7C700E96BAB /* MixedFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCB33AA221EE7C700E96BAB /* MixedFlow.swift */; };
+		CFCB33AD221EEC0300E96BAB /* ConfirmResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCB33AC221EEC0300E96BAB /* ConfirmResultViewController.swift */; };
+		CFDE7B38223FEAB40034744E /* FlowInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDE7B37223FEAB40034744E /* FlowInspectable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF42F1AA22204DC600651A05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFBB87C8220DE46B00B5AC2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFBB87CF220DE46B00B5AC2B;
+			remoteInfo = FlowExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF42F1A522204DC600651A05 /* FlowExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF42F1A922204DC600651A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF42F1B022204E9100651A05 /* ModalViewControllerPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewControllerPresenterTests.swift; sourceTree = "<group>"; };
+		CF42F1B122204E9100651A05 /* PopViewControllerDismisserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopViewControllerDismisserTests.swift; sourceTree = "<group>"; };
+		CF42F1B222204E9100651A05 /* PushViewControllerPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushViewControllerPresenterTests.swift; sourceTree = "<group>"; };
+		CF42F1B322204E9100651A05 /* EmptyViewControllerDismisserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyViewControllerDismisserTests.swift; sourceTree = "<group>"; };
+		CF42F1B522204E9100651A05 /* FakeScreenLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeScreenLoader.swift; sourceTree = "<group>"; };
+		CF42F1B622204E9100651A05 /* FakeViewControllerDismisser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeViewControllerDismisser.swift; sourceTree = "<group>"; };
+		CF42F1B722204E9100651A05 /* TestViewControllerModalPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewControllerModalPresenter.swift; sourceTree = "<group>"; };
+		CF42F1B822204E9100651A05 /* TestViewControllerPresenterFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewControllerPresenterFactory.swift; sourceTree = "<group>"; };
+		CF42F1B922204E9100651A05 /* TestViewControllerPushNavigationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewControllerPushNavigationPresenter.swift; sourceTree = "<group>"; };
+		CF42F1BA22204E9100651A05 /* ModalViewControllerDismisserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewControllerDismisserTests.swift; sourceTree = "<group>"; };
+		CF42F1BB22204E9100651A05 /* ViewControllerPresenterFactoryImplTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPresenterFactoryImplTests.swift; sourceTree = "<group>"; };
+		CF42F1BC22204E9100651A05 /* FlowHandlerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowHandlerTests.swift; sourceTree = "<group>"; };
+		CF42F1CB22204F8D00651A05 /* SimpleModalFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleModalFlowTests.swift; sourceTree = "<group>"; };
+		CF42F1D12220692000651A05 /* MixedFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixedFlowTests.swift; sourceTree = "<group>"; };
+		CFAB18162223F5E2002BCB93 /* FlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
+		CFBB87D0220DE46B00B5AC2B /* FlowExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFBB87D3220DE46B00B5AC2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFBB87D8220DE46B00B5AC2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFBB87DA220DE46C00B5AC2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFBB87DD220DE46C00B5AC2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CFBB87DF220DE46C00B5AC2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFBB87E7220DE4AD00B5AC2B /* ViewControllerPresenterFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPresenterFactory.swift; sourceTree = "<group>"; };
+		CFBB87E8220DE4AD00B5AC2B /* ViewControllerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPresenter.swift; sourceTree = "<group>"; };
+		CFBB87EA220DE4AD00B5AC2B /* PushViewControllerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushViewControllerPresenter.swift; sourceTree = "<group>"; };
+		CFBB87EB220DE4AD00B5AC2B /* PopViewControllerDismisser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopViewControllerDismisser.swift; sourceTree = "<group>"; };
+		CFBB87ED220DE4AD00B5AC2B /* ModalViewControllerDismisser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewControllerDismisser.swift; sourceTree = "<group>"; };
+		CFBB87EE220DE4AD00B5AC2B /* ModalViewControllerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewControllerPresenter.swift; sourceTree = "<group>"; };
+		CFBB87EF220DE4AD00B5AC2B /* EmptyViewControllerDismisser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyViewControllerDismisser.swift; sourceTree = "<group>"; };
+		CFBB87F0220DE4AD00B5AC2B /* Flow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
+		CFBB87FA220DE52600B5AC2B /* UINavigationController+Completion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Completion.swift"; sourceTree = "<group>"; };
+		CFCB3396221EBF5000E96BAB /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		CFCB3398221EC01900E96BAB /* UIViewController+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Layout.swift"; sourceTree = "<group>"; };
+		CFCB339A221EC83700E96BAB /* SimpleModalFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleModalFlow.swift; sourceTree = "<group>"; };
+		CFCB339E221EC97800E96BAB /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
+		CFCB33A1221ECF4100E96BAB /* SimpleNavigationFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleNavigationFlow.swift; sourceTree = "<group>"; };
+		CFCB33A3221ED11700E96BAB /* ResponseGeneratorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseGeneratorViewController.swift; sourceTree = "<group>"; };
+		CFCB33A5221ED1A800E96BAB /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		CFCB33A7221ED1B200E96BAB /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
+		CFCB33AA221EE7C700E96BAB /* MixedFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixedFlow.swift; sourceTree = "<group>"; };
+		CFCB33AC221EEC0300E96BAB /* ConfirmResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmResultViewController.swift; sourceTree = "<group>"; };
+		CFDE7B37223FEAB40034744E /* FlowInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowInspectable.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF42F1A222204DC600651A05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFBB87CD220DE46B00B5AC2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF42F1A622204DC600651A05 /* FlowExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF42F1C922204F4000651A05 /* Flow */,
+				CF42F1A922204DC600651A05 /* Info.plist */,
+				CF42F1CB22204F8D00651A05 /* SimpleModalFlowTests.swift */,
+				CF42F1D12220692000651A05 /* MixedFlowTests.swift */,
+			);
+			path = FlowExampleTests;
+			sourceTree = "<group>";
+		};
+		CF42F1AF22204E9100651A05 /* ViewControllerPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				CF42F1B322204E9100651A05 /* EmptyViewControllerDismisserTests.swift */,
+				CF42F1B422204E9100651A05 /* Fake */,
+				CF42F1BA22204E9100651A05 /* ModalViewControllerDismisserTests.swift */,
+				CF42F1B022204E9100651A05 /* ModalViewControllerPresenterTests.swift */,
+				CF42F1B122204E9100651A05 /* PopViewControllerDismisserTests.swift */,
+				CF42F1B222204E9100651A05 /* PushViewControllerPresenterTests.swift */,
+				CF42F1BB22204E9100651A05 /* ViewControllerPresenterFactoryImplTests.swift */,
+			);
+			path = ViewControllerPresenter;
+			sourceTree = "<group>";
+		};
+		CF42F1B422204E9100651A05 /* Fake */ = {
+			isa = PBXGroup;
+			children = (
+				CF42F1B522204E9100651A05 /* FakeScreenLoader.swift */,
+				CF42F1B622204E9100651A05 /* FakeViewControllerDismisser.swift */,
+				CF42F1B722204E9100651A05 /* TestViewControllerModalPresenter.swift */,
+				CF42F1B822204E9100651A05 /* TestViewControllerPresenterFactory.swift */,
+				CF42F1B922204E9100651A05 /* TestViewControllerPushNavigationPresenter.swift */,
+			);
+			path = Fake;
+			sourceTree = "<group>";
+		};
+		CF42F1C922204F4000651A05 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				CF42F1BC22204E9100651A05 /* FlowHandlerTests.swift */,
+				CF42F1AF22204E9100651A05 /* ViewControllerPresenter */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		CFBB87C7220DE46B00B5AC2B = {
+			isa = PBXGroup;
+			children = (
+				CFBB87D2220DE46B00B5AC2B /* FlowExample */,
+				CF42F1A622204DC600651A05 /* FlowExampleTests */,
+				CFBB87D1220DE46B00B5AC2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFBB87D1220DE46B00B5AC2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFBB87D0220DE46B00B5AC2B /* FlowExample.app */,
+				CF42F1A522204DC600651A05 /* FlowExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFBB87D2220DE46B00B5AC2B /* FlowExample */ = {
+			isa = PBXGroup;
+			children = (
+				CFBB87D3220DE46B00B5AC2B /* AppDelegate.swift */,
+				CFBB87DA220DE46C00B5AC2B /* Assets.xcassets */,
+				CFBB87F9220DE51300B5AC2B /* Extensions */,
+				CFBB87E5220DE4AD00B5AC2B /* FlowDefinition */,
+				CFBB87DF220DE46C00B5AC2B /* Info.plist */,
+				CFBB87DC220DE46C00B5AC2B /* LaunchScreen.storyboard */,
+				CFBB87D7220DE46B00B5AC2B /* Main.storyboard */,
+				CFCB33A9221EE78200E96BAB /* NavigationSubFlow */,
+				CFBB87FC220DE7C300B5AC2B /* SimpleModalFlow */,
+				CFCB33A0221ECF2700E96BAB /* SimpleNavigationFlow */,
+				CFCB339C221EC91E00E96BAB /* ViewControllers */,
+			);
+			path = FlowExample;
+			sourceTree = "<group>";
+		};
+		CFBB87E5220DE4AD00B5AC2B /* FlowDefinition */ = {
+			isa = PBXGroup;
+			children = (
+				CFBB87F0220DE4AD00B5AC2B /* Flow.swift */,
+				CFAB18162223F5E2002BCB93 /* FlowController.swift */,
+				CFDE7B37223FEAB40034744E /* FlowInspectable.swift */,
+				CFBB87E6220DE4AD00B5AC2B /* ViewControllerPresenter */,
+			);
+			path = FlowDefinition;
+			sourceTree = "<group>";
+		};
+		CFBB87E6220DE4AD00B5AC2B /* ViewControllerPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				CFBB87E7220DE4AD00B5AC2B /* ViewControllerPresenterFactory.swift */,
+				CFBB87E8220DE4AD00B5AC2B /* ViewControllerPresenter.swift */,
+				CFBB87E9220DE4AD00B5AC2B /* Navigation */,
+				CFBB87EC220DE4AD00B5AC2B /* Modal */,
+				CFBB87EF220DE4AD00B5AC2B /* EmptyViewControllerDismisser.swift */,
+			);
+			path = ViewControllerPresenter;
+			sourceTree = "<group>";
+		};
+		CFBB87E9220DE4AD00B5AC2B /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				CFBB87EA220DE4AD00B5AC2B /* PushViewControllerPresenter.swift */,
+				CFBB87EB220DE4AD00B5AC2B /* PopViewControllerDismisser.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		CFBB87EC220DE4AD00B5AC2B /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+				CFBB87ED220DE4AD00B5AC2B /* ModalViewControllerDismisser.swift */,
+				CFBB87EE220DE4AD00B5AC2B /* ModalViewControllerPresenter.swift */,
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		CFBB87F9220DE51300B5AC2B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CFBB87FA220DE52600B5AC2B /* UINavigationController+Completion.swift */,
+				CFCB3398221EC01900E96BAB /* UIViewController+Layout.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CFBB87FC220DE7C300B5AC2B /* SimpleModalFlow */ = {
+			isa = PBXGroup;
+			children = (
+				CFCB339A221EC83700E96BAB /* SimpleModalFlow.swift */,
+			);
+			path = SimpleModalFlow;
+			sourceTree = "<group>";
+		};
+		CFCB339C221EC91E00E96BAB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CFCB339E221EC97800E96BAB /* ButtonViewController.swift */,
+				CFCB33AC221EEC0300E96BAB /* ConfirmResultViewController.swift */,
+				CFCB33A7221ED1B200E96BAB /* ErrorViewController.swift */,
+				CFCB33A3221ED11700E96BAB /* ResponseGeneratorViewController.swift */,
+				CFCB3396221EBF5000E96BAB /* RootViewController.swift */,
+				CFCB33A5221ED1A800E96BAB /* SuccessViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CFCB33A0221ECF2700E96BAB /* SimpleNavigationFlow */ = {
+			isa = PBXGroup;
+			children = (
+				CFCB33A1221ECF4100E96BAB /* SimpleNavigationFlow.swift */,
+			);
+			path = SimpleNavigationFlow;
+			sourceTree = "<group>";
+		};
+		CFCB33A9221EE78200E96BAB /* NavigationSubFlow */ = {
+			isa = PBXGroup;
+			children = (
+				CFCB33AA221EE7C700E96BAB /* MixedFlow.swift */,
+			);
+			path = NavigationSubFlow;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF42F1A422204DC600651A05 /* FlowExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF42F1AE22204DC600651A05 /* Build configuration list for PBXNativeTarget "FlowExampleTests" */;
+			buildPhases = (
+				CF42F1A122204DC600651A05 /* Sources */,
+				CF42F1A222204DC600651A05 /* Frameworks */,
+				CF42F1A322204DC600651A05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF42F1AB22204DC600651A05 /* PBXTargetDependency */,
+			);
+			name = FlowExampleTests;
+			productName = FlowExampleTests;
+			productReference = CF42F1A522204DC600651A05 /* FlowExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CFBB87CF220DE46B00B5AC2B /* FlowExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFBB87E2220DE46C00B5AC2B /* Build configuration list for PBXNativeTarget "FlowExample" */;
+			buildPhases = (
+				CFBB87CC220DE46B00B5AC2B /* Sources */,
+				CFBB87CD220DE46B00B5AC2B /* Frameworks */,
+				CFBB87CE220DE46B00B5AC2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlowExample;
+			productName = FlowExample;
+			productReference = CFBB87D0220DE46B00B5AC2B /* FlowExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFBB87C8220DE46B00B5AC2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Davide Lorenzi";
+				TargetAttributes = {
+					CF42F1A422204DC600651A05 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+						TestTargetID = CFBB87CF220DE46B00B5AC2B;
+					};
+					CFBB87CF220DE46B00B5AC2B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = CFBB87CB220DE46B00B5AC2B /* Build configuration list for PBXProject "FlowExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFBB87C7220DE46B00B5AC2B;
+			productRefGroup = CFBB87D1220DE46B00B5AC2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFBB87CF220DE46B00B5AC2B /* FlowExample */,
+				CF42F1A422204DC600651A05 /* FlowExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF42F1A322204DC600651A05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFBB87CE220DE46B00B5AC2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFBB87DE220DE46C00B5AC2B /* LaunchScreen.storyboard in Resources */,
+				CFBB87DB220DE46C00B5AC2B /* Assets.xcassets in Resources */,
+				CFBB87D9220DE46B00B5AC2B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF42F1A122204DC600651A05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF42F1C122204E9100651A05 /* FakeScreenLoader.swift in Sources */,
+				CF42F1CC22204F8D00651A05 /* SimpleModalFlowTests.swift in Sources */,
+				CF42F1C222204E9100651A05 /* FakeViewControllerDismisser.swift in Sources */,
+				CF42F1D22220692000651A05 /* MixedFlowTests.swift in Sources */,
+				CF42F1C822204E9100651A05 /* FlowHandlerTests.swift in Sources */,
+				CF42F1C622204E9100651A05 /* ModalViewControllerDismisserTests.swift in Sources */,
+				CF42F1C422204E9100651A05 /* TestViewControllerPresenterFactory.swift in Sources */,
+				CF42F1BE22204E9100651A05 /* PopViewControllerDismisserTests.swift in Sources */,
+				CF42F1BF22204E9100651A05 /* PushViewControllerPresenterTests.swift in Sources */,
+				CF42F1C722204E9100651A05 /* ViewControllerPresenterFactoryImplTests.swift in Sources */,
+				CF42F1C022204E9100651A05 /* EmptyViewControllerDismisserTests.swift in Sources */,
+				CF42F1C322204E9100651A05 /* TestViewControllerModalPresenter.swift in Sources */,
+				CF42F1C522204E9100651A05 /* TestViewControllerPushNavigationPresenter.swift in Sources */,
+				CF42F1BD22204E9100651A05 /* ModalViewControllerPresenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFBB87CC220DE46B00B5AC2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFBB87F1220DE4AD00B5AC2B /* ViewControllerPresenterFactory.swift in Sources */,
+				CFBB87F8220DE4AE00B5AC2B /* Flow.swift in Sources */,
+				CFCB33A2221ECF4100E96BAB /* SimpleNavigationFlow.swift in Sources */,
+				CFCB3397221EBF5000E96BAB /* RootViewController.swift in Sources */,
+				CFCB33AD221EEC0300E96BAB /* ConfirmResultViewController.swift in Sources */,
+				CFBB87F3220DE4AE00B5AC2B /* PushViewControllerPresenter.swift in Sources */,
+				CFCB33A4221ED11700E96BAB /* ResponseGeneratorViewController.swift in Sources */,
+				CFBB87F7220DE4AE00B5AC2B /* EmptyViewControllerDismisser.swift in Sources */,
+				CFCB33A8221ED1B200E96BAB /* ErrorViewController.swift in Sources */,
+				CFBB87D4220DE46B00B5AC2B /* AppDelegate.swift in Sources */,
+				CFBB87F5220DE4AE00B5AC2B /* ModalViewControllerDismisser.swift in Sources */,
+				CFCB33A6221ED1A800E96BAB /* SuccessViewController.swift in Sources */,
+				CFCB3399221EC01900E96BAB /* UIViewController+Layout.swift in Sources */,
+				CFBB87F6220DE4AE00B5AC2B /* ModalViewControllerPresenter.swift in Sources */,
+				CFDE7B38223FEAB40034744E /* FlowInspectable.swift in Sources */,
+				CFAB18172223F5E2002BCB93 /* FlowController.swift in Sources */,
+				CFBB87F4220DE4AE00B5AC2B /* PopViewControllerDismisser.swift in Sources */,
+				CFCB339B221EC83700E96BAB /* SimpleModalFlow.swift in Sources */,
+				CFBB87FB220DE52600B5AC2B /* UINavigationController+Completion.swift in Sources */,
+				CFCB339F221EC97800E96BAB /* ButtonViewController.swift in Sources */,
+				CFCB33AB221EE7C700E96BAB /* MixedFlow.swift in Sources */,
+				CFBB87F2220DE4AD00B5AC2B /* ViewControllerPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF42F1AB22204DC600651A05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFBB87CF220DE46B00B5AC2B /* FlowExample */;
+			targetProxy = CF42F1AA22204DC600651A05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFBB87D7220DE46B00B5AC2B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFBB87D8220DE46B00B5AC2B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CFBB87DC220DE46C00B5AC2B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFBB87DD220DE46C00B5AC2B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF42F1AC22204DC600651A05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W53MTDV45J;
+				INFOPLIST_FILE = FlowExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.transferwise.dev.Transferwise.FlowExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlowExample.app/FlowExample";
+			};
+			name = Debug;
+		};
+		CF42F1AD22204DC600651A05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W53MTDV45J;
+				INFOPLIST_FILE = FlowExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.transferwise.dev.Transferwise.FlowExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlowExample.app/FlowExample";
+			};
+			name = Release;
+		};
+		CFBB87E0220DE46C00B5AC2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFBB87E1220DE46C00B5AC2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFBB87E3220DE46C00B5AC2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlowExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.transferwise.dev.Transferwise.FlowExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFBB87E4220DE46C00B5AC2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FlowExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.transferwise.dev.Transferwise.FlowExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF42F1AE22204DC600651A05 /* Build configuration list for PBXNativeTarget "FlowExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF42F1AC22204DC600651A05 /* Debug */,
+				CF42F1AD22204DC600651A05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFBB87CB220DE46B00B5AC2B /* Build configuration list for PBXProject "FlowExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFBB87E0220DE46C00B5AC2B /* Debug */,
+				CFBB87E1220DE46C00B5AC2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFBB87E2220DE46C00B5AC2B /* Build configuration list for PBXNativeTarget "FlowExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFBB87E3220DE46C00B5AC2B /* Debug */,
+				CFBB87E4220DE46C00B5AC2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFBB87C8220DE46B00B5AC2B /* Project object */;
+}
