@@ -9,7 +9,7 @@ protocol Flow: class {
 struct FlowHandler<T> {
 
     private let onStarted: (() -> Void)?
-    private let onFinished: ((T, ViewControllerDismisser?) -> Void)?
+    private let onFinished: ((T, ViewControllerDismisser?) -> Void)
 
     init(started: (() -> Void)? = nil,
          finished: ((T, ViewControllerDismisser?) -> Void)? = nil) {
@@ -29,6 +29,6 @@ struct FlowHandler<T> {
 
     func flowFinished(result: T,
                       dismisser: ViewControllerDismisser?) {
-        onFinished?(result, dismisser)
+        onFinished(result, dismisser)
     }
 }
