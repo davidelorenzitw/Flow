@@ -2,7 +2,6 @@ protocol Flow: class {
     associatedtype FlowResultType
 
     var flowHandler: FlowHandler<FlowResultType> { get set }
-    var flowInspectable: FlowInspectable { get }
     func start()
     func terminate()
 }
